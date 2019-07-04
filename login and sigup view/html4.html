@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>
+signup page
+</title>
+</head>
+<body>
+<h1 style="font-family:Comic Sans Ms;text-align="center";font-size:20pt;
+color:#00FF00;>
+SIGNUP PAGE
+</h1>
+<form  name="login">
+Username:<input type="text" name="userid"/>
+Password:<input type="password" name="pswrd"/>
+<input type="button" onclick="check(this.form)" value="SIGNUP"/>
+<input type="reset" value="Cancel"/>
+</form>
+<script >
+function check(form)/*function to check userid & password*/
+{
+ /*the following code checkes whether the entered userid and password are matching*/
+ if(form.userid.value == "username"  && form.pswrd.value == "password")
+  { 
+  	window.open('SIGNUP.html')/*opens the target page while Id & password matches*/  
+  }
+ else
+ {
+   alert("Error Password or Username")/*displays error message*/
+  }
+}
+
+ var username="username";
+ var password="password"; 
+module.exports = {username,password};
+</script>
+</body>
+</html>
