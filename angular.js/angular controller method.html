@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<title> Angular controller methods </title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body> 
+<h2> Angular controller methods </h2>
+<div ng-app="myapp" ng-controller="myctrl">
+First Name: <input type="text" ng-model="firstname"> <br/>
+Last Name: <input type="text" ng-model="lastname"> <br/>
+ fullName: {{fullName()}} 
+</div>
+<script>
+var app = angular.module("myapp",[]);
+app.controller("myctrl",function($scope){
+$scope.firstname = "";
+$scope.lastname = ""
+$scope.fullName=function(){
+ return $scope.firstname+" "+$scope.lastname
+};
+});
+</script>
+</body>
+</html>
