@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<title>Angular validate user input </title>
+<body>
+<h3> Angular Validate User Input </h3>
+<form ng-app="" name="myForm">
+EMAIL: <input type="email" name="myAddress" ng-model="text" >
+<span ng-show="myForm.myAddress.$error.email">INVALID EMAIL </span>
+</form>
+</body>
+</html>
