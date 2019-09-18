@@ -1,0 +1,19 @@
+// if we want to retrieve the data into html form 
+
+<!doctype html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<title> Angular module directive </title>
+<body>
+<h4> Angular module directive </h4>
+<div ng-app="myapp" ng-controller="myctrl" >
+Name: <input ng-model="name" >
+</div>
+<script>
+var app = angular.module("myapp",[]);
+app.controller("myctrl",function($scope){
+$scope.name = "gowrav rahul.pentakota"
+});
+</script>
+</body>
+</html>
