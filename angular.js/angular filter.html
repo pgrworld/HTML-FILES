@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<title> Angular filter </title>
+<body>
+<h3> Angular filter </h3>
+<div ng-app="myApp" ng-controller="myCtrl">
+<p> MY NAME IS: {{firstName | lowercase}}
+</div>
+<script>
+var app = angular.module("myApp",[])
+app.controller("myCtrl",function($scope){
+$scope.firstName="GOWRAV RAHUL";
+});
+</script>
+</body>
+</html>
