@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<title>Angular demo </title>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl">
+<select>
+<option ng-repeat = "x in names">{{x}}</option>
+</select>
+</div>
+<script>
+ var app = angular.module("myApp",function);
+ app.controller("myCtrl",function($scope){
+ $scope.names = ["value1", "value2", "value3", "value4"];
+});
+</script>
+</body>
+</html>
+
+
