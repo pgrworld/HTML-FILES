@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<title> Angular demo </title>
+<body>
+<h2> Angular ng-options </h2>
+<div ng-app ="myApp" ng-controller = myCtrl" >
+<select ng-model="selectedName" ng-options="x for x in names">
+</div>
+<script>
+var app = angular.module("myApp",[]);
+app.controller("myCtrl",function($scope){
+$scope.names = ["value1","value2","value3","vlaue4"];
+});
+</script>
+</body>
+</html>
